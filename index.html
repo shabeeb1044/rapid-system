@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapid Response Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='14' height='14' fill='%23c2410c'/%3E%3Crect x='18' width='14' height='14' fill='%231e40af'/%3E%3Crect y='18' width='14' height='14' fill='%230f766e'/%3E%3Crect x='18' y='18' width='14' height='14' fill='%23171614'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-bar">
+    <span><strong>Rapid Response Services</strong> · Missed call 0484 410 2200</span>
+  </div>
+
+  <header class="topbar" id="site-top">
+    <button class="brand" type="button" data-action="home">
+      <span class="mark" aria-hidden="true"></span>
+      <span>
+        <b>RAPID</b>
+        <span>Response Services</span>
+      </span>
+    </button>
+    <nav class="nav" id="top-nav">
+      <a href="#services">Services</a>
+      <a href="#flow">Flow</a>
+      <a href="#desks">Desks</a>
+      <button class="btn btn-req btn-sm" type="button" data-action="open-citizen">Citizen</button>
+      <button class="btn btn-apt btn-sm" type="button" data-action="open-officer">Officer</button>
+      <button class="btn btn-ink btn-sm" type="button" data-action="open-admin">Admin</button>
+    </nav>
+  </header>
+
+  <div id="landing">
+    <main id="main">
+      <section class="wrap hero">
+        <div>
+          <div class="kicker"><i></i> Citizen desk · Constituency office</div>
+          <h1>Every request finds the right officer.</h1>
+          <p class="lede">Register once, then file a complaint, ask for a meeting, or confirm a ward event. Location and department decide who acts, and you keep the reference number.</p>
+          <div class="hero-actions">
+            <button class="btn btn-req" type="button" data-action="open-citizen">Enter as citizen</button>
+            <button class="btn btn-ghost" type="button" data-action="open-officer">Officer login</button>
+            <button class="btn btn-ghost" type="button" data-action="open-admin">Admin login</button>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <img src="assets/hero-civic.jpg" alt="A field officer speaking with a citizen at a civic help desk">
+          <div class="caption">
+            <b>Bazaar Lane, Market Area</b>
+            Water leakage assigned to Rahul Menon, Water Supply.
+          </div>
+        </div>
+      </section>
+
+      <div class="wrap">
+        <div class="stat-row">
+          <div class="stat"><em>01</em><span>A missed call sends a secure link by WhatsApp or SMS</span></div>
+          <div class="stat"><em>02</em><span>OTP confirms the mobile. Location is taken only with consent</span></div>
+          <div class="stat"><em>03</em><span>The ward and department assign the officer. The file stays open until it is closed</span></div>
+        </div>
+      </div>
+
+      <section class="section" id="services">
+        <div class="wrap">
+          <h2>One desk. Three kinds of work.</h2>
+          <p class="intro">Complaints, meetings with the representative, and ward events. Each follows its own path. The citizen profile does not change.</p>
+          <div class="service-grid">
+            <article class="service req">
+              <div class="copy">
+                <span class="tag">Citizen requests</span>
+                <h3>From complaint to closure.</h3>
+                <p>Name the issue and the place. The office matches the ward, constituency and department, then assigns the officer. You can follow the case from New to Closed.</p>
+                <div class="chips">
+                  <span class="chip">New</span>
+                  <span class="chip">In Progress</span>
+                  <span class="chip">On Hold</span>
+                  <span class="chip">Resolved</span>
+                  <span class="chip">Closed</span>
+                </div>
+                <button class="btn btn-req" type="button" data-action="open-request">File a request</button>
+              </div>
+              <img src="assets/service-requests.jpg" alt="Citizen and officer reviewing a request at a wooden table">
+            </article>
+            <article class="service reverse apt">
+              <img src="assets/service-appointments.jpg" alt="Citizen meeting a public representative across a teak table">
+              <div class="copy">
+                <span class="tag">Politician appointment</span>
+                <h3>A meeting, not a complaint.</h3>
+                <p>Choose the representative and state why you need to meet. The office marks the request, and only an approved request moves to a time slot. If you cannot attend, reschedule or cancel. The earlier slot stays on record.</p>
+                <div class="chips">
+                  <span class="chip">Important</span>
+                  <span class="chip">Priority</span>
+                  <span class="chip">Normal</span>
+                  <span class="chip">General</span>
+                </div>
+                <button class="btn btn-apt" type="button" data-action="open-meeting">Request a meeting</button>
+              </div>
+            </article>
+            <article class="service evt">
+              <div class="copy">
+                <span class="tag">Location events</span>
+                <h3>Notices for the right wards.</h3>
+                <p>The office publishes the date, time and venue for selected areas. Citizens registered there receive the notice and can confirm they will attend.</p>
+                <div class="chips">
+                  <span class="chip">Location targeting</span>
+                  <span class="chip">Portal notice</span>
+                  <span class="chip">Attendance</span>
+                </div>
+                <button class="btn btn-evt" type="button" data-action="open-event">Confirm attendance</button>
+              </div>
+              <img src="assets/service-events.jpg" alt="Evening community gathering with a registration table">
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="flow" style="padding-top:0">
+        <div class="wrap">
+          <h2>How a case moves.</h2>
+          <p class="intro">One verified profile. After that, a complaint, a meeting, or a ward event. An officer sees only the work assigned to them.</p>
+          <div class="flow">
+            <article class="step req"><b>01</b><strong>Missed call</strong><span>The dedicated number sends a registration link by WhatsApp or SMS.</span></article>
+            <article class="step req"><b>02</b><strong>OTP and place</strong><span>The mobile is verified. Location is stored only if you allow it.</span></article>
+            <article class="step req"><b>03</b><strong>Request</strong><span>Ward and department decide the officer. A request number is issued.</span></article>
+            <article class="step apt"><b>04</b><strong>Meeting</strong><span>Reviewed separately from complaints, then offered as a time slot.</span></article>
+            <article class="step evt"><b>05</b><strong>Event</strong><span>Selected wards are notified. Attendance is recorded at the desk.</span></article>
+            <article class="step"><b>06</b><strong>Office view</strong><span>The representative sees requests, meetings, events and the full history.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="desks" style="padding-top:0">
+        <div class="wrap">
+          <h2>Sign in.</h2>
+          <p class="intro">Sign in with the mobile or office email. After that, use the request, meeting and event forms on this site.</p>
+          <div class="role-grid">
+            <article class="role">
+              <img src="assets/field-officer.jpg" alt="Field officer marking a location on a residential street">
+              <span class="tag" style="color:var(--req)">Citizen</span>
+              <h3>Aisha Rahman</h3>
+              <p>Shopkeeper on Bazaar Lane. Her water request is open, and her meeting is waiting with the office.</p>
+              <div class="cred">Mobile <code>9876543210</code><br>Sign-in code <code>482916</code></div>
+              <div style="margin-top:14px"><button class="btn btn-req" type="button" data-action="open-citizen">Citizen login</button></div>
+            </article>
+            <article class="role">
+              <span class="tag" style="color:var(--apt)">Officer</span>
+              <h3>Rahul Menon</h3>
+              <p>Assistant Engineer, Water Supply, Market Area. He opens only the requests assigned to him.</p>
+              <div class="cred">Email <code>rahul.menon@rapidresponse.in</code><br>Password <code>officer123</code></div>
+              <div style="margin-top:14px"><button class="btn btn-apt" type="button" data-action="open-officer">Officer login</button></div>
+            </article>
+            <article class="role">
+              <span class="tag" style="color:var(--ink)">Politician / Admin</span>
+              <h3>Meera Nair</h3>
+              <p>Reviews meetings, watches every case, and publishes events for the wards she covers.</p>
+              <div class="cred">Email <code>meera.nair@rapidresponse.in</code><br>Password <code>admin123</code></div>
+              <div style="margin-top:14px"><button class="btn btn-ink" type="button" data-action="open-admin">Admin login</button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <span>Rapid Response Services · Citizen requests · Appointments · Ward events</span>
+    </footer>
+  </div>
+
+  <div id="app" class="hidden"></div>
+  <div class="toast-stack" id="toasts" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
