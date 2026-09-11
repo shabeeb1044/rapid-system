@@ -20,6 +20,15 @@ const departments = [
 
 const ui = { view: "landing", step: 1, draft: {}, geo: null, receipt: null };
 const landingNav = document.getElementById("top-nav").innerHTML;
+const topbar = document.getElementById("site-top");
+const navToggle = document.getElementById("nav-toggle");
+
+function setMenuOpen(open) {
+  topbar.classList.toggle("is-open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  const label = navToggle.querySelector(".nav-toggle-text");
+  if (label) label.textContent = open ? "Close" : "Menu";
+}
 
 function esc(value) {
   return String(value ?? "")
@@ -53,11 +62,14 @@ function options(list) {
 
 function setTop() {
   const nav = document.getElementById("top-nav");
+  setMenuOpen(false);
   if (ui.view === "landing") {
     nav.innerHTML = landingNav;
+    topbar.classList.remove("topbar-app");
     return;
   }
   nav.innerHTML = `<button class="btn btn-ghost btn-sm" type="button" data-action="home">Back to site</button>`;
+  topbar.classList.add("topbar-app");
 }
 
 function page(kicker, title, body) {
@@ -300,6 +312,24 @@ function open(view, step) {
   ui.geo = null;
   render();
 }
+
+navToggle.addEventListener("click", (event) => {
+  event.stopPropagation();
+  setMenuOpen(!topbar.classList.contains("is-open"));
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.closest("#top-nav a, #top-nav [data-action]")) setMenuOpen(false);
+  else if (!event.target.closest("#site-top")) setMenuOpen(false);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenuOpen(false);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 980) setMenuOpen(false);
+});
 
 document.addEventListener("click", (event) => {
   const el = event.target.closest("[data-action]");
